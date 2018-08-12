@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "es2015",
+    "react"
+  ],
+  "plugins": [
+    ["babel-plugin-root-import", {
+      "rootPathSuffix": "src"
+    }],
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "syntax-dynamic-import"
+  ]
+}

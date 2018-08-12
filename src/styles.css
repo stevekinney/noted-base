@@ -1,0 +1,136 @@
+#root { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: menu;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 5px solid pink;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  background-color: pink;
+  color: black;
+  border-color: palevioletred;
+}
+
+a:active {
+  background-color: cyan;
+  color: black;
+}
+
+.container {
+  display: grid;
+	grid-template-rows: 50px auto;
+  grid-template-columns: 200px auto;
+  grid-column-gap: 20px;
+	height: 100vh;
+}
+
+.emptystate {
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notfound {
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notfound h1 {
+  color: rgb(255, 0, 204);
+  border-bottom: 5px solid rgb(150, 0, 154);
+}
+
+.header {
+  display: flex;
+  color: #FFF;
+  background-color: rgb(255, 0, 204);
+  border-bottom: 1px solid rgb(150, 0, 154);
+  grid-column-start: 1;
+  grid-column-end:   3;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title {
+  padding: 0;
+  margin: 0;
+}
+
+.notelist {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  overflow: scroll;
+  border-right: 1px solid #CCC;
+}
+
+.note {
+  padding: 1em;
+  border-bottom: 1px solid #CCC;
+  overflow-y: hidden;
+  display: block;
+}
+
+.note:global(.active) {
+  background-color: rgb(129, 255, 94);
+}
+
+.note__body {
+  text-overflow: ellipsis;
+}
+
+.noteheader {
+  width: 100%;
+  display: flex;
+}
+
+.noteheader__title {
+  flex: 1;
+  width: 100%;
+}
+
+.noteheader__button {
+  display: inline-block;
+  padding: 0.6em 1em;
+  background-color: cyan;
+  border: 1px solid rgb(0, 121, 121);
+  text-align: center;
+}
+
+.noteheader__button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.content {
+  padding: 2em;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.content__panes {
+  height: 100%;
+  display: flex;
+}
+
+.content__pane {
+  width: 50%;
+}
