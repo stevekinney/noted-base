@@ -15,7 +15,7 @@ const initialState = {
   },
   4: {
     title: "A Picture for Liz 2",
-    body: "![Prince](/chenBefore.jpg)"
+    body: "![Prince](/family.jpg)"
   }
 };
 
