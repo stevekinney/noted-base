@@ -16,7 +16,7 @@
     "codemirror": "^5.35.0",
     "history": "^4.7.2",
     "jest": "^23.5.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.19",
     "marked": "^0.3.17",
     "moment": "^2.21.0",
     "prop-types": "^15.6.1",
